@@ -36,7 +36,12 @@ class Signup extends Component {
                     <div className="form-group">
                         <input name="last-name" type="last-name" ></input>
                     </div>
-
+                    <div className="form-group">
+                        <label>Age</label>
+                    </div>
+                    <div className="form-group">
+                        <input name="age" type="age" ></input>
+                    </div>
                     <div className="form-group">
                         <label>Phone Number</label>
                     </div>
@@ -50,7 +55,7 @@ class Signup extends Component {
                         <input name="password" type="password" ></input>
                     </div>
                     <div className="form-group">
-                        <Link to="/login" className="btn btn-submit" type="submit" value="Submit" />
+                        <Link to="/login" className="btn btn-submit" type="submit" value="Submit"/>
                     </div>
                 </form>
             </div>

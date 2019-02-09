@@ -4,11 +4,13 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Signup from './views/signup/signup';
 import Login from './views/login/login';
 import Profile from './views/profile/profile';
+import Landing from './views/landing/landing';
 
 class App extends Component {
   render() {
     let routes = (
       <Switch>
+        <Route exact path="/" component={Landing} ></Route>
         <Route exact path="/signup" component={Signup}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/profile" component={Profile}/>

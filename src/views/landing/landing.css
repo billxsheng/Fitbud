@@ -1,0 +1,55 @@
+.background {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+.btn-row {
+    color: white;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.btn-row div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image {
+    margin: 0 auto;
+    margin-top: 200px;
+    height: 200px;
+}
+
+.btn-landing {
+    background-color: #FF7429;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.btn-landing:hover {
+    background-color: white;
+    color: #FF7429;
+    border: 1px solid #FF7429;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .grow:hover,
+  .grow:focus {
+    transform: scale(1.05);
+  }
+  
+  .grow:active {
+    transform: scale(.90);
+  }
