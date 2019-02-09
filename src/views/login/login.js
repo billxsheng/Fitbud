@@ -12,13 +12,19 @@ class Login extends Component {
 
     submitForm = (event) => {
         event.preventDefault();
-        axios.post('localhost:1800/login', {
+        axios.post('http://localhost:1800/login', {
             phone: event.target.phone.value,
             password: event.target.password.value
-        }).then(() => {
-            console.log('yes')
+        }).then((res) => {
+            if(res.data.success) {
+                console.log('redirect')
+                //redirect
+            } else {
+                console.log('dont redirect')
+                //do nothing
+            }
         }).catch(() => {
-            console.log('nah')
+            console.log('Error')
         })
     }
     render() {
