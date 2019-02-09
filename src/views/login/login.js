@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './login.css';
 import CSSModules from 'react-css-modules';
 import axios from 'axios';
+import {withRouter} from 'react-router-dom';
 
 class Login extends Component {
 
@@ -18,10 +19,10 @@ class Login extends Component {
         }).then((res) => {
             if(res.data.success) {
                 console.log('redirect')
-                //redirect
+                this.props.history.push("/profile");
             } else {
                 console.log('dont redirect')
-                //do nothing
+                this.props.history.push("/login");
             }
         }).catch(() => {
             console.log('Error')
@@ -54,4 +55,4 @@ class Login extends Component {
 };
 
 
-export default CSSModules(Login, styles);
+export default withRouter(CSSModules(Login, styles));
