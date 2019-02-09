@@ -10,8 +10,8 @@ class Profile extends Component {
 
     render() {
         return(
-            <div className="jumbotron" styleName="login-form">
-        
+            <div className="jumbotron">
+                <h1>Profile</h1>
             </div>
         )
     }

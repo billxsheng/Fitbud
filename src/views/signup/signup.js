@@ -10,12 +10,11 @@ class Signup extends Component {
 
     render() {
         return(
-            <div>
-
+            <div className="container">
+                <h1>Signup</h1>
             </div>
         )
     }
 };
-
 
 export default CSSModules(Signup, styles);
