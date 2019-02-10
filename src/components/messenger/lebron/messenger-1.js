@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import styles from './messenger.css';
+import styles from './messenger-1.css';
 import {Link} from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 
-class Messenger extends Component {
+class Messenger1 extends Component {
     render() {
         return (
             <div className="col-md-8" styleName="tile">
@@ -13,7 +13,7 @@ class Messenger extends Component {
                 <div styleName="mesgs">
           <div styleName="msg_history">
             <div styleName="incoming_msg">
-              <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../assets/pp1.jpg')} alt="sunil"/> </div>
+              <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../../assets/pp1.jpg')} alt="sunil"/> </div>
               <div styleName="received_msg">
                 <div styleName="received_withd_msg">
                   <p>Test which is a new approach to have all
@@ -28,7 +28,7 @@ class Messenger extends Component {
                 <span styleName="time_date"> 11:01 AM    |    June 9</span> </div>
             </div>
             <div styleName="incoming_msg">
-              <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../assets/pp1.jpg')} alt="sunil"/> </div>
+              <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../../assets/pp1.jpg')} alt="sunil"/> </div>
               <div styleName="received_msg">
                 <div styleName="received_withd_msg">
                   <p>Test, which is a new approach to have</p>
@@ -41,7 +41,7 @@ class Messenger extends Component {
                 <span styleName="time_date"> 11:01 AM    |    Today</span> </div>
             </div>
             <div styleName="incoming_msg">
-              <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../assets/pp1.jpg')} alt="sunil"/> </div>
+              <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../../assets/pp1.jpg')} alt="sunil"/> </div>
               <div styleName="received_msg">
                 <div styleName="received_withd_msg">
                   <p>We work directly with our designers and suppliers,
@@ -64,4 +64,4 @@ class Messenger extends Component {
 };
 
 
-export default CSSModules(Messenger, styles, {allowMultiple: true});
+export default CSSModules(Messenger1, styles, {allowMultiple: true});
