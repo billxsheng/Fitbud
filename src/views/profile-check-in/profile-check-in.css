@@ -24,3 +24,11 @@ line-height: 700px;
     opacity:1!important;
     
 }
+
+.pop-up {
+    display: none;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 0 auto;
+}

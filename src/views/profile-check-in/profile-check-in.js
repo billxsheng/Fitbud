@@ -77,13 +77,13 @@ class ProfileCheckIn extends Component {
                 function() {
                     var cCor = this.state.gymCor.candidates[0].geometry.location
                     if(pos != this.state.gymCor){
-                        alert(`The gym on your profile (Goodlife Fitness Ottawa is Lat: ${cCor.lat} and Lng: ${cCor.lng}, but your current location is Lat: ${pos.lat} and Lng: ${pos.lng}`)
+                        alert(`The gym on your profile (Goodlife Fitness Ottawa) is Lat: ${cCor.lat} and Lng: ${cCor.lng}, but your current location (Lamoureux) is Lat: ${pos.lat} and Lng: ${pos.lng}`)
                     }
                   
                
                 }
                 .bind(this),
-                5000
+                4000
             );
               },
               (error) => {
@@ -92,13 +92,17 @@ class ProfileCheckIn extends Component {
               }
             )
         
-        
-    
-        
 
         
     }
 
+
+    popup(){
+
+        document.getElementById('pop-up').style.display = "block";
+
+
+    }
     
 
     render() {
@@ -114,8 +118,9 @@ class ProfileCheckIn extends Component {
             <p className="display-5" >{this.state.trackName}</p>
             </div>
             <div className = "col-11 center text-center" styleName="main-area">
+            <div styleName="pop-up" id="pop-up" > </div>
             <a className="btn btn-primary btn-lg" onClick={() => this.compareLocation()}>Check In</a>
-
+            <a className="btn btn-primary btn-lg" onClick={() => this.popup()} >By In</a>
 
             </div>
                 <Navbar/>
