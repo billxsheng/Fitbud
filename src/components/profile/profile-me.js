@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './profile-me.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 
 class ProfileMe extends Component {
@@ -9,14 +9,14 @@ class ProfileMe extends Component {
 
 
             <div className="col-md-3" styleName="tile">
-    
-                <div className="card mx-auto mt-4 text-center" styleName="bgCard" style={{"width": "20rem"}}>
+
+                <div className="card mx-auto mt-4 text-center" styleName="bgCard" style={{ "width": "20rem" }}>
                     <h1 className="my-2" styleName="orange">Alan Xie</h1>
                     <p>19 / Male / Waterloo</p>
-    
-                    <img src={require('../../assets/alan.jpg')} className="card-img-top mx-auto" styleName="roundAlan"/>
-    
-                    
+
+                    <img src={require('../../assets/alan.jpg')} className="card-img-top mx-auto" styleName="roundAlan" />
+
+
                     <div className="card-body">
                         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
@@ -25,18 +25,19 @@ class ProfileMe extends Component {
                                     <p>Powerlifting</p>
                                     <h6>About Me</h6>
                                     <p>When I lost my gym buddies, I lost my motivation. Looking for a FitBuddy to bring me back! 😤💪</p>
-                                    <p>Current Gym: GoodLife Fitness Ottawa Queen Street</p>
-                                    <br></br>
+                                    <h6>Current Gym</h6>
+                                    <p>CoodLife Fitness Ottawa Queen Street</p>
+                                    
                                 </div>
                                 <div className="carousel-item">
-                                        <h6>Current</h6>
-                                        <p className="my-0">Bench Press: 150lb</p>
-                                        <p className="my-0">Squat: 70lb</p>
-                                        <p className="mt-0">Deadlift: 120lb</p>
-                                        <h6>My Goals</h6>
-                                        <p className="my-0">Bench Press: 150lb</p>
-                                        <p className="my-0">Squat: 100lb</p>
-                                        <p className="mt-0">Deadlift: 225lb</p>
+                                    <h6>Current</h6>
+                                    <p className="my-0">Bench Press: 150lb</p>
+                                    <p className="my-0">Squat: 70lb</p>
+                                    <p className="mt-0">Deadlift: 120lb</p>
+                                    <h6>My Goals</h6>
+                                    <p className="my-0">Bench Press: 150lb</p>
+                                    <p className="my-0">Squat: 100lb</p>
+                                    <p className="mt-0">Deadlift: 225lb</p>
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -57,4 +58,4 @@ class ProfileMe extends Component {
 };
 
 
-export default CSSModules(ProfileMe, styles, {allowMultiple: true});
+export default CSSModules(ProfileMe, styles, { allowMultiple: true });
