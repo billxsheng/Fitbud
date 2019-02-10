@@ -1,0 +1,66 @@
+.brdRadBtn {
+    width: 90px;
+    border-radius: 20px;
+    background-color: #FF7429;
+    color: white;
+    border: none;
+}
+
+.brdRadBtn:hover {
+    background-color: white;
+    color: #FF7429;
+    border: 1px solid #FF7429;
+}
+
+.brdRadForm {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.image {
+    width: 60%;
+    height:auto;
+}
+
+.cardBorder {
+    border: none;
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 20px;
+}
+
+.properFont {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .grow:hover,
+  .grow:focus {
+    transform: scale(1.05);
+  }
+  
+  .grow:active {
+    transform: scale(.90);
+  }
+  .grow-large {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-in-out;
+  }
+  
+  .grow-large:hover,
+  .grow-large:focus {
+    transform: scale(1.2);
+  }
+  
+  .grow-large:active {
+    transform: scale(.95);
+  }  

@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Signup from './views/signup/signup';
 import Login from './views/login/login';
-import Profile from './views/profile/profile-feed';
+import Profile from './views/profile-feed/profile-feed';
 import Landing from './views/landing/landing';
 import findFriends from './components/find-friends/find-friends';
 import aboutYou from './views/signup-stage-two/about-you';
