@@ -7,7 +7,7 @@ class FindFriends extends Component {
     render() {
         return (
         <div className="row moveDown">
-            <div styleName="btn-back-div">
+            <div>
                 <Link to="/profile/feed" styleName="btn-back" className="btn">Back</Link>
             </div>
             <div className="col-1" styleName="moveBareDown">
@@ -25,11 +25,12 @@ class FindFriends extends Component {
                             Any newbies can hit me up for some form checks or help!</p>
                         <hr/>
                         <div className="row">
-                            <div className="col-10">
+                            <div className="col-9">
                                 <a href="#" className="btn btn-primary" styleName="decWidth message-orange bRadMain grow">Message</a>
                             </div>
                             <div className="col">
-                                hi </div>
+                                <img src={require("../../assets/unstar.png")} className="mt-1" styleName="starSize"></img>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -46,11 +47,13 @@ class FindFriends extends Component {
                             you ever want to have a sick workout session!</p>
                         <hr/>
                         <div className="row">
-                            <div className="col-10">
+                            <div className="col-9">
                                 <a href="#" className="btn btn-primary" styleName="decWidth message-orange bRadMain grow">Message</a>
                             </div>
                             <div className="col">
-                                hi </div>
+                            <img src={require("../../assets/unstar.png")} className="mt-1" styleName="starSize"></img>
+
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -68,11 +71,12 @@ class FindFriends extends Component {
                             stands for loser. #aesthetics #physiquelife</p>
                         <hr/>
                         <div className="row">
-                            <div className="col-10">
+                            <div className="col-9">
                                 <a href="#" className="btn btn-primary" styleName="decWidth message-orange bRadMain grow">Message</a>
                             </div>
                             <div className="col">
-                                hi
+                            <img src={require("../../assets/unstar.png")} className="mt-1" styleName="starSize"></img>
+
                             </div>
                         </div>
                     </div>
