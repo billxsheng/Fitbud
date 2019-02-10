@@ -79,13 +79,13 @@ class ProfileCheckIn extends Component {
         return(
             
             <div className = "row">
-                   <div className="btn-group" role="group" aria-label="Basic example">
-  <button type="button" className="btn btn-secondary" onClick={() => this.onPrevClick()}>Back</button>
-  <button type="button" className="btn btn-secondary" onClick={() => this.onPlayClick()}>Pause/Play</button>
-  <button type="button" className="btn btn-secondary" onClick={() => this.onNextClick()}>Next</button>
-  <button type="button" className="btn btn-secondary" onClick={() => this.connect()}>connect</button>
-  <p className="display-5" >{this.state.trackName}</p>
-</div>
+            <div className="btn-group" role="group" aria-label="Basic example">
+                <button type="button" className="btn btn-secondary" onClick={() => this.onPrevClick()}>Back</button>
+                <button type="button" className="btn btn-secondary" onClick={() => this.onPlayClick()}>Pause/Play</button>
+                <button type="button" className="btn btn-secondary" onClick={() => this.onNextClick()}>Next</button>
+                <button type="button" className="btn btn-secondary" onClick={() => this.connect()}>connect</button>
+            <p className="display-5" >{this.state.trackName}</p>
+            </div>
             <div className = "col-11 center text-center" styleName="main-area">
             <a className="btn btn-primary btn-lg" onClick={() => this.compareLocation()}>Settings</a>
 

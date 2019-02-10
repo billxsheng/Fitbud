@@ -14,7 +14,7 @@ class ProfileMessenger extends Component {
             <div className="row">
                 <ProfileMe/>
                 <Messenger/>
-               <Navbar/>
+                <Navbar/>
             </div>
         )
     }
