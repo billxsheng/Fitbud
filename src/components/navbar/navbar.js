@@ -19,6 +19,9 @@ class Navbar extends Component {
                         <Link to="/find-friends"><i styleName="feed-btn" className="fas fa-user-friends"></i></Link>                 
                     </div>
                     <div styleName="feed-btn-cont">
+                        <Link to="#"><i styleName="feed-btn" className="fas fa-dumbbell"></i></Link>                 
+                    </div>
+                    <div styleName="feed-btn-cont">
                         <Link to="/profile/check-in"><i styleName="feed-btn" className="fas fa-map-marker-alt"></i></Link>                 
                     </div>
                 </div>      

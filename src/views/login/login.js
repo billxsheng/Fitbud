@@ -32,8 +32,7 @@ class Login extends Component {
     render() {
         return (
             
-            <div className="text-center mx-auto card mt-5" styleName = "cardBorder " style={{"width": "25rem"}}>
-                <br/>
+            <div className="text-center mx-auto card mt-5" styleName="cardBorder" style={{"width": "35rem"}}>
                 <br/>
                 <br/>
                 <img className = "mx-auto" styleName="image" src={require('../../assets/logo.png')}></img>
@@ -51,11 +50,9 @@ class Login extends Component {
                         <input name="password" styleName="brdRadForm" type="password" ></input>
                     </div>
                     <br/>
-                    <br/>
                     <div className="form-group" styleName = "grow">
                         <input type="submit" styleName="brdRadBtn" value="Login" />
                     </div>
-                    <br/> 
                     <br/> 
                 </form>
             </div>

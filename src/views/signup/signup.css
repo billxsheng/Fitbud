@@ -1,0 +1,53 @@
+.brdRadBtn2 {
+    width: 90px;
+    border-radius: 20px;
+    background-color: #FF7429;
+    color: white;
+    border: 1px solid white !important;
+
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.brdRadBtn2:hover, .brdRadBtn2:focus {
+    background-color: white;
+    border-radius: 20px !important;
+    color: #FF7429;
+    transform: scale(1.05);
+    border: 1px solid #FF7429;
+}
+
+.brdRadBtn2:active {
+    transform: scale(.90);
+  }
+
+
+.orange2 {
+    color: #FF7429;
+}
+.brdRadForm2 {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.image {
+    width: 60%;
+    height:auto;
+}
+
+.cardBorder {
+    border: none;
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 20px;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+
