@@ -5,6 +5,7 @@ import Signup from './views/signup/signup';
 import Login from './views/login/login';
 import Profile from './views/profile/profile';
 import Landing from './views/landing/landing';
+import findFriends from './components/find-friends/find-friends';
 
 class App extends Component {
 
@@ -29,6 +30,7 @@ class App extends Component {
         <Route exact path="/signup" component={Signup}/>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/profile/feed" component={Profile}/>
+        <Route exact path="/find-friends" component={findFriends}/>
       </Switch>
     )
 

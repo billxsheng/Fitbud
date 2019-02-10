@@ -20,12 +20,9 @@ class Profile extends Component {
         )
         return(
             <div>
-                <BrowserRouter>
-                    <div>
-                        {routes}
+    
                         <Navbar/>
-                    </div>
-                </BrowserRouter>
+
             </div>
         )
     }
