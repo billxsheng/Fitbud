@@ -29,7 +29,7 @@ class Session extends Component {
         
         
         console.log("acitavted")
-      const token = 'BQBVqZwMJNrotpeDXB8CfKTAyB7iWk4VTt3Vp5rkxbltJgh3Ad8RdUE5ZrRbEKle_Cs0m6-4-PoeJLEYJ8kj7b29KIdMCtgmlSkYq2Dex0OOWvh75ZvnQXh-ROBzgBiScHcfsGkswCgRPi2m5h2sGbxqpUUI5ELcWGgTSCkQ';
+      const token = 'BQCXuKbnKejIcyJkXKkfGuiADzYZcMCMOQ_cd8vxjQHwK4YVcdRl7z5F9J_BH8jlvDcKtlStgEnEozeJVQM3yXc8T4nSqoLfev-j_5tGWl8JQl6cQvQXEypuDkV4dHvqne8mqVM44vSfjvlb1UyFjJWMImHULVjZgPf9PEuQ';
         if (window.Spotify !== null) {
           this.player = new window.Spotify.Player({
             name: "Testing",
@@ -60,7 +60,7 @@ class Session extends Component {
         this.player.on('ready', data => {
           let { device_id } = data;
           console.log("Let the music play on!");
-          console.log(device_id);
+          alert(`FitBud is now connected to ${device_id}`);
         });
     
         this.player.on('player_state_changed', state => this.onStateChanged(state));
@@ -159,12 +159,12 @@ class Session extends Component {
 
             </div>
             <div className="col mt-5 mr-5">
-                <h1>To-Do List</h1>
+                <h1>To-Do List: Day 8</h1>
                 <ul class="list-group list-group-flush">
   <li class="list-group-item">Dumbbell Chest Press 50lbs 3x8 </li>
-  <li class="list-group-item">Dumbbell Shoulder Press 40lbs 3x8 </li>
-  <li class="list-group-item">Dumbbell Chest Press 50lbs </li>
-  <li class="list-group-item">Dumbbell Chest Press 50lbs </li>
+  <li class="list-group-item">Military Shoulder Press 40lbs 3x8 </li>
+  <li class="list-group-item">Cable Fly 90lbs 3x10</li>
+  <li class="list-group-item">Tricep Extensions 100lb 5x5</li>
   <li class="list-group-item">Dumbbell Chest Press 50lbs </li>
 
 </ul>

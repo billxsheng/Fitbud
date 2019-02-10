@@ -3,7 +3,7 @@ import styles from './find-friends.css';
 import {Link} from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 
-class FindFriends extends Component {
+class FindFriends2 extends Component {
     render() {
         return (
         <div className="row moveDown">
@@ -86,4 +86,4 @@ class FindFriends extends Component {
 };
 
 
-export default CSSModules(FindFriends, styles, {allowMultiple: true});
+export default CSSModules(FindFriends2, styles, {allowMultiple: true});

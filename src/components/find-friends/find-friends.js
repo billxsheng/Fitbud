@@ -84,7 +84,7 @@ class FindFriends extends Component {
             </div>
             
             <div className="col-1" styleName="moveBareDown">
-               <i className="mr-5 fas fa-chevron-circle-right" styleName="iconSize orange grow-large"></i>
+            <Link to="/find-friends/page_2"><i className="mr-5 fas fa-chevron-circle-right" styleName="iconSize orange grow-large" ></i></Link>
             </div>
         </div> 
         )

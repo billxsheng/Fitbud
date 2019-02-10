@@ -5,6 +5,7 @@ import Signup from './views/signup/signup';
 import Login from './views/login/login';
 import Landing from './views/landing/landing';
 import findFriends from './components/find-friends/find-friends';
+import findFriends2 from './components/find2/find-friends2';
 import aboutYou from './views/signup-stage-two/about-you';
 import profileFeed from './views/profile-feed/profile-feed';
 import profileCheckIn from './views/profile-check-in/profile-check-in';
@@ -168,6 +169,7 @@ connect(){
         <Route exact path="/profile/feed" component={profileFeed}/>
         <Route exact path="/profile/check-in" component={profileCheckIn}/>
         <Route exact path="/find-friends" component={findFriends}/>
+        <Route exact path="/find-friends/page_2" component={findFriends2}/>
         <Route exact path="/profile/chat/lebron-james" component={profileMessengerLb}/>
         <Route exact path="/profile/chat/justin-fields" component={profileMessengerJf}/>
         <Route exact path="/profile/chat/sal-murphy" component={profileMessengerSm}/>

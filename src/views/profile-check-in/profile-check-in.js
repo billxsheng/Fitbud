@@ -77,7 +77,7 @@ class ProfileCheckIn extends Component {
                 function() {
                     var cCor = this.state.gymCor.candidates[0].geometry.location
                     if(pos != this.state.gymCor){
-                        alert(`The gym on your profile (Goodlife Fitness Ottawa) is Lat: ${cCor.lat} and Lng: ${cCor.lng}, but your current location (Lamoureux) is Lat: ${pos.lat} and Lng: ${pos.lng}`)
+                        alert(`The gym on your profile (Goodlife Fitness Ottawa Queen) is Lat: ${cCor.lat} and Lng: ${cCor.lng}, but your current location (Lamoureux) is Lat: ${pos.lat} and Lng: ${pos.lng}`)
                     }
                   
                
@@ -101,8 +101,8 @@ class ProfileCheckIn extends Component {
            
             <div className = "col-11 center text-center" styleName="main-area">
             <div styleName="pop-up" id="pop-up" > </div>
-            <a className="btn btn-primary btn-lg" onClick={() => this.compareLocation()}>Check In</a>
-            <Link to="/profile/session" className="btn btn-primary btn-lg" >By In</Link>
+            <a className="btn btn-primary btn-lg" styleName="orgBtn1" onClick={() => this.compareLocation()}>Check In</a>
+            <Link to="/profile/session" className="btn btn-primary btn-lg ml-5" styleName="orgBtn2">Bypass</Link>
             </div>
                 <Navbar/>
             </div>
@@ -111,4 +111,4 @@ class ProfileCheckIn extends Component {
 };
 
 
-export default CSSModules(ProfileCheckIn, styles);
+export default CSSModules(ProfileCheckIn, styles); 

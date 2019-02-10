@@ -25,6 +25,37 @@ line-height: 700px;
     
 }
 
+.orgBtn1 {
+    background-color: #FF7429;
+    color: white !important;
+    border-radius: 20px;
+    border: 1px solid #FF7429
+
+}
+
+.currentg{
+    color: grey;
+}
+
+.orgBtn1:hover {
+    background-color: white;
+    color: #FF7429 !important;
+    border: 1px solid #FF7429
+}
+
+.orgBtn2 {
+    background-color: white;
+    color: #FF7429;
+    border-radius: 20px;
+    border: 1px solid #FF7429
+}
+
+.orgBtn2:hover {
+    background-color: #FF7429;
+    color: white;
+    border: 1px solid #FF7429
+}
+
 .pop-up {
     display: none;
     width: 200px;

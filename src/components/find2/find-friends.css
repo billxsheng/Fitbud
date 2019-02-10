@@ -1,0 +1,108 @@
+.moveDown {
+    margin-top: 5%;
+}
+
+.orange {
+    color: #FF7429 !important;
+}
+
+.card-orange {
+    background-color: #FF7429; 
+}
+
+.message-orange {
+    background-color: #FF7429 !important;
+    border: none;
+}
+
+.message-orange:hover {
+    background-color: white !important;
+    border: 1px solid #FF7429;
+    color: #FF7429;
+}
+
+.starSize {
+    height:30px;
+    width: auto;
+}
+
+.btn-back {
+    background-color: #FF7429;
+    padding: 10px 20px;
+    top: 35px;
+    position: absolute;
+    left: 30px;
+    color: white;
+    border-radius: 15px;
+}
+
+.btn-back:hover {
+    background-color: white;
+    border: 1px solid #FF7429;
+    color: #FF7429;
+}
+
+
+.moveBareDown {
+    margin-top: 260px;
+    padding: 15px;
+}
+
+.small {
+    width: 50%;
+    height: auto;
+}
+.decWidth {
+    width: 60%;
+}
+
+.iconSize {
+    font-size: 300%;
+}
+
+.bRadPic {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bRadMain {
+    border-radius: 20px;
+}
+
+.tile {
+    margin-top: 120px !important;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .grow:hover,
+  .grow:focus {
+    transform: scale(1.05);
+  }
+  
+  .grow:active {
+    transform: scale(.90);
+  }
+  
+  .grow-large {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-in-out;
+  }
+  
+  .grow-large:hover,
+  .grow-large:focus {
+    transform: scale(1.2);
+    cursor:pointer;
+  }
+  
+  .grow-large:active {
+    transform: scale(.95);
+    cursor:pointer;
+  }
