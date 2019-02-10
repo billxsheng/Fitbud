@@ -37,7 +37,7 @@ class App extends Component {
   const token = 'BQAXc4M6j8boBdW6MwI70Pg6csn_Y-sWrEVeX970fbLh2kQ0h99o3FhVqSCgSLHCaxeW00H_Am_x5ioCWOLftQXGJRmPdN8EP_eaAun4QdC5s3wLPUHPvqJdLTqMtkdzmrlXQ-gh58toOnhR8zirV8p6O_r0tJlBvRC0IAI03g';
     if (window.Spotify !== null) {
       this.player = new window.Spotify.Player({
-        name: "Matt's Spotify Player",
+        name: "Testing",
         getOAuthToken: cb => { cb(token); },
       });
         this.createEventHandlers();
@@ -65,7 +65,7 @@ class App extends Component {
     this.player.on('ready', data => {
       let { device_id } = data;
       console.log("Let the music play on!");
-      
+      // this.setState({ deviceId: device_id });
     });
   }
 
@@ -84,7 +84,7 @@ class App extends Component {
   componentDidMount() {
     axios.get('https://api.github.com/users/maecapozzi')
     .then(response => console.log(response))
-    fetch("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=ElginFitness&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyDTSfOsB_Kse4D3cIuoBrUzfSElywL0fjs")
+    fetch("BQClh4acc-6kmUj1ZGsmboSHw-iv89eDmp7ATCu1eqqQUCg2C6ji4HkIrMDxsGeRk9BJtR9_9Wwd6ipZjOAKmbb4xeTYmO3SN4TNIkfNofsjXTGxAoOwUcnRoiVdwRC0qaO_Ie-Adm64jB5aI3bvXu6xVhBSMXGV3ckyl1XB")
     .then(res => res.json())
     .then(
       (result) => {
