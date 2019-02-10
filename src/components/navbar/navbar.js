@@ -13,7 +13,7 @@ class Navbar extends Component {
                     <hr></hr>
                     <Link to="/profile/chat/lebron-james"><div styleName="feed-btn-msg msg1"></div></Link>                 
                     <Link to="/profile/chat/justin-fields"><div styleName="feed-btn-msg msg2"></div></Link>                 
-                    <Link to="/profile/sal-murphy"><div styleName="feed-btn-msg msg3"></div></Link> 
+                    <Link to="/profile/chat/sal-murphy"><div styleName="feed-btn-msg msg3"></div></Link> 
                     <hr></hr>             
                     <div styleName="feed-btn-cont">
                         <Link to="/find-friends"><i styleName="feed-btn" className="fas fa-user-friends"></i></Link>                 

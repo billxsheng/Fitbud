@@ -3,7 +3,7 @@ import styles from './profile-messenger.css';
 import {Link} from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 import Navbar from '../../components/navbar/navbar';
-import Messenger from '../../components/messenger/messenger';
+import Messenger from '../../components/messenger/lebron/messenger-1';
 import ProfileMe from '../../components/profile/profile-me';
 
 class ProfileMessenger extends Component {
