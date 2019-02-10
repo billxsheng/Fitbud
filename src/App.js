@@ -12,6 +12,7 @@ import axios from 'axios';
 import profileMessengerLb from './views/profile-messenger/profile-messenger-lb/profile.messenger-lb';
 import profileMessengerJf from './views/profile-messenger/profile-messenger-jf/profile.messenger-jf';
 import profileMessengerSm from './views/profile-messenger/profile-messenger-sm/profile.messenger-sm';
+import session from './views/session/session';
 
 
 class App extends Component {
@@ -170,6 +171,7 @@ connect(){
         <Route exact path="/profile/chat/lebron-james" component={profileMessengerLb}/>
         <Route exact path="/profile/chat/justin-fields" component={profileMessengerJf}/>
         <Route exact path="/profile/chat/sal-murphy" component={profileMessengerSm}/>
+        <Route exact path="/profile/session" component={session}/>
       </Switch>
     )
 

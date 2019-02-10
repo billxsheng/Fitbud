@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styles from './profile-check-in.css';
 import CSSModules from 'react-css-modules';
 import Navbar from '../../components/navbar/navbar';
-import pic from './planner.png';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import ProfileMe from '../../components/profile/profile-me';
 
 
@@ -91,37 +91,18 @@ class ProfileCheckIn extends Component {
     
               }
             )
-        
-
-        
-    }
-
-
-    popup(){
-
-        document.getElementById('pop-up').style.display = "block";
-
-
     }
     
-
     render() {
 
         return(
             
             <div className = "row">
-            <div className="btn-group" role="group" aria-label="Basic example">
-                <button type="button" className="btn btn-secondary" onClick={() => this.onPrevClick()}>Back</button>
-                <button type="button" className="btn btn-secondary" onClick={() => this.onPlayClick()}>Pause/Play</button>
-                <button type="button" className="btn btn-secondary" onClick={() => this.onNextClick()}>Next</button>
-                <button type="button" className="btn btn-secondary" onClick={() => this.connect()}>connect</button>
-            <p className="display-5" >{this.state.trackName}</p>
-            </div>
+           
             <div className = "col-11 center text-center" styleName="main-area">
             <div styleName="pop-up" id="pop-up" > </div>
             <a className="btn btn-primary btn-lg" onClick={() => this.compareLocation()}>Check In</a>
-            <a className="btn btn-primary btn-lg" onClick={() => this.popup()} >By In</a>
-
+            <Link to="/profile/session" className="btn btn-primary btn-lg" >By In</Link>
             </div>
                 <Navbar/>
             </div>

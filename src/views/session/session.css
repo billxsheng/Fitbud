@@ -1,0 +1,34 @@
+.background {
+    background-color: white;
+}
+
+.button-g{
+    margin:0 auto;
+}
+
+.spec{
+    padding-right: 2px!important;
+    padding-top:9px!important;
+    color:#FF7429;
+    font-weight:600;
+    box-shadow: 0 0 20px #ccc;
+        background-color: white!important;
+}
+
+.image{
+    margin-top: 4%;
+    max-width: 100%!important;
+}
+
+.button-gl{
+    border-radius: 20px!important;
+    background-color: #FF7429;
+    border:none; 
+    
+}
+.button-gl:hover{
+    background-color: white;
+    color: #FF7429;
+    border: 1px solid #FF7429;
+
+}
