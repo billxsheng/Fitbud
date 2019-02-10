@@ -6,8 +6,6 @@ import CSSModules from 'react-css-modules';
 class ProfileMe extends Component {
     render() {
         return (
-
-
             <div className="col-md-3" styleName="tile">
 
                 <div className="card mx-auto mt-4 text-center" styleName="bgCard" style={{ "width": "20rem" }}>
@@ -26,7 +24,8 @@ class ProfileMe extends Component {
                                     <h6>About Me</h6>
                                     <p>When I lost my gym buddies, I lost my motivation. Looking for a FitBuddy to bring me back! 😤💪</p>
                                     <h6>Current Gym</h6>
-                                    <p>CoodLife Fitness Ottawa Queen Street</p>
+                                    <p>GoodLife Fitness Ottawa Queen Street</p>
+                                    <br></br>
                                     
                                 </div>
                                 <div className="carousel-item">
@@ -38,6 +37,8 @@ class ProfileMe extends Component {
                                     <p className="my-0">Bench Press: 150lb</p>
                                     <p className="my-0">Squat: 100lb</p>
                                     <p className="mt-0">Deadlift: 225lb</p>
+                                    <h6></h6>
+                                    <br></br>
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button"

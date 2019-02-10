@@ -7,7 +7,8 @@ class FeedPost extends Component {
     render() {
         return (
 
-            <div className="col-md-8" styleName="tile">
+            <div className="col-md-8 
+            " styleName="tile scrollY">
            <br/>
             <h1 styleName="orange">Newsfeed</h1>
             <br></br>
@@ -40,20 +41,18 @@ class FeedPost extends Component {
                 <div className="card-header py-1" styleName="orangeCardHead">
                     <div className="row">
                         <div className="col py-2 text-left">
-                            <h5 className="mx-auto">Broken Squat Rack</h5>
+                            <h5 className="mx-auto">New Years Resolution</h5>
                         </div>
                         <div className="col mt-2 text-right">
-                            <p>4 mins ago</p>
+                            <p>5 days ago</p>
                         </div>
                     </div>
 
                 </div>
 
                 <div className="card-body">
-                    <p>Hey FitBuds! The squat rack in the far back right of the gym is broken and I have
-                        notified the staff. It should be replaced within the next week. For now, we can use the other 2
-                        squat racks. Keep up the gains everyone! #FitBuddies 💪</p>
-                    <p className="text-right"> - John Smith</p>
+                    <p>Hi everyone! Just wanted to say that I'm proud of you all for following up with your New Year's resolutions and truly shaping your future (literally). LOL! </p>
+                    <p className="text-right"> - Mariah Brown</p>
                     <button type="button" className="btn btn-primary btn-sm mr-3" styleName="bottomBtn grow">Like</button>
                     <button type="button" className="btn btn-secondary btn-sm" styleName="bottomBtn grow">Comment</button>
                 </div>
@@ -64,19 +63,17 @@ class FeedPost extends Component {
                 <div className="card-header py-1" styleName="orangeCardHead">
                     <div className="row">
                         <div className="col py-2 text-left">
-                            <h5 className="mx-auto">Broken Squat Rack</h5>
+                            <h5 className="mx-auto">Looking for friends!</h5>
                         </div>
                         <div className="col mt-2 text-right">
-                            <p>4 mins ago</p>
+                            <p>1 week ago</p>
                         </div>
                     </div>
 
                 </div>
 
                 <div className="card-body">
-                    <p>Hey FitBuds! The squat rack in the far back right of the gym is broken and I have
-                        notified the staff. It should be replaced within the next week. For now, we can use the other 2
-                        squat racks. Keep up the gains everyone! #FitBuddies 💪</p>
+                    <p>Yo! Calvin here, I'm excited to lift with you all. If you see me working out, come by and say hi! I'm looking for a couple friends to gym with around 3 times a week. #AssToTheGrass 🍑🍑🍑</p>
                     <p className="text-right"> - John Smith</p>
                     <button type="button" className="btn btn-primary btn-sm mr-3" styleName="bottomBtn grow">Like</button>
                     <button type="button" className="btn btn-secondary btn-sm" styleName="bottomBtn grow">Comment</button>
