@@ -6,7 +6,6 @@ import CSSModules from 'react-css-modules';
 class Navbar extends Component {
     render() {
         return (
-            <div className="row">
                 <div styleName="navbar" className="col-md-1">
                     <div styleName="feed-btn-cont">
                         <Link to="/profile/feed"><i styleName="feed-btn" className="fas fa-bars"></i></Link>                 
@@ -23,7 +22,6 @@ class Navbar extends Component {
                         <Link to="/profile/check-in"><i styleName="feed-btn" className="fas fa-map-marker-alt"></i></Link>                 
                     </div>
                 </div>      
-            </div>
         )
     }
 };

@@ -1,0 +1,54 @@
+.roundAlan2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 200px;
+    border: 2px solid #FF7429;
+  }
+
+  .orange {
+    color: #FF7429;
+}
+
+.tile {
+}
+
+.orangeCardHead {
+    background-color: #FF7429;
+    color: white;
+}
+
+  .borderShit {
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ccc;
+      border: none;
+  }
+
+  .bottomBtn {
+      width: 90px;
+      border-radius: 20px;
+      background-color: #FF7429;
+      color: white;
+      border: 1px solid #FF7429;
+  }
+
+  .grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .grow:hover,
+  .grow:focus {
+    transform: scale(1.05);
+  }
+  
+  .grow:active {
+    transform: scale(.90);
+  }
+
+  .bottomBtn:hover {
+      background-color:white;
+      color: #FF7429;
+      border: 1px solid #FF7429;
+  }

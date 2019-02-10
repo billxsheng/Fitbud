@@ -1,9 +1,7 @@
 .navbar {
     height: 100vh;
     background-color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: relative;
     border-left: 1px solid rgba(0,0,0,.1);
 }
 

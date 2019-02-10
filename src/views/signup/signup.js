@@ -22,7 +22,7 @@ class Signup extends Component {
     render() {
         return (
             <div className="jumbotron">
-                <h1>We are so grateful to be joining your fitness journey!</h1>
+                <h1>We are glad to be joining you on your fitness journey!</h1>
                 <form onSubmit={this.submitForm}>
                     <div className="form-group">
                         <label>First Name</label>

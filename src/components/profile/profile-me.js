@@ -6,10 +6,9 @@ import CSSModules from 'react-css-modules';
 class ProfileMe extends Component {
     render() {
         return (
-            <div className="row">
 
 
-            <div className="col-3" styleName="tile">
+            <div className="col-md-3" styleName="tile">
     
                 <div className="card mx-auto mt-4 text-center" styleName="bgCard" style={{"width": "20rem"}}>
                     <h1 className="my-2" styleName="orange">Alan Xie</h1>
@@ -53,7 +52,6 @@ class ProfileMe extends Component {
                     </div>
                 </div>
             </div>
-        </div>
         )
     }
 };

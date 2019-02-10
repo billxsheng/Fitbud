@@ -4,12 +4,11 @@
 }
 
 .red {
-    background-color: #e74c3c;
+    background-color: #FF7429;
     height: 100vh;
 }
 
 .profile {
-    position: absolute;
     left: 0;
     top: 0;
 }
@@ -22,7 +21,7 @@
     width: 60%;
     height: auto;
     border-radius: 200px;
-    border: 3px solid #e74c3c;
+    border: 3px solid #FF7429;
 }
 
 .noBorder {
@@ -30,7 +29,6 @@
 }
 
 .tile {
-    margin: 20px 0 0 50px;
     position: relative;
 }
 
@@ -44,7 +42,7 @@
 }
 
 .orange {
-    color: #e74c3c;
+    color: #FF7429;
 }
 
 .settings-orange {
