@@ -7,7 +7,7 @@ class Landing extends Component {
     render() {
         return (
             <div className="jumbotron" styleName="background">
-                <div className="row">
+                <div className="row pb-5">
                     <img styleName="image" src={require('../../assets/logo.png')}></img>
                 </div>
                 <div className="row" styleName="btn-row">
