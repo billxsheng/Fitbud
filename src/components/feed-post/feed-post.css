@@ -23,6 +23,11 @@
       border: none;
   }
 
+  .scrollY {
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  
   .bottomBtn {
       width: 90px;
       border-radius: 20px;

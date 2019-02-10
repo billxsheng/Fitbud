@@ -6,8 +6,6 @@ import CSSModules from 'react-css-modules';
 class ProfileMe extends Component {
     render() {
         return (
-
-
             <div className="col-md-3" styleName="tile">
 
                 <div className="card mx-auto mt-4 text-center" styleName="bgCard" style={{ "width": "20rem" }}>
