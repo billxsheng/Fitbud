@@ -16,37 +16,33 @@ class Messenger2 extends Component {
               <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../../assets/pp2.jpg')} alt="sunil"/> </div>
               <div styleName="received_msg">
                 <div styleName="received_withd_msg">
-                  <p>Test which is a new approach to have all
-                    solutions</p>
+                  <p>Yo! How's it going? Gym today at 3pm?</p>
                   <span styleName="time_date"> 11:01 AM    |    June 9</span></div>
               </div>
             </div>
             <div styleName="outgoing_msg">
               <div styleName="sent_msg">
-                <p>Test which is a new approach to have all
-                  solutions</p>
+                <p>Good man! Yeah I'll see you there. I'm doing legs. What about you?</p>
                 <span styleName="time_date"> 11:01 AM    |    June 9</span> </div>
             </div>
             <div styleName="incoming_msg">
               <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../../assets/pp2.jpg')} alt="sunil"/> </div>
               <div styleName="received_msg">
                 <div styleName="received_withd_msg">
-                  <p>Test, which is a new approach to have</p>
+                  <p>Oh sick! I'm testing my 1 rep max for squat today.</p>
                   <span styleName="time_date"> 11:01 AM    |    Yesterday</span></div>
               </div>
             </div>
             <div styleName="outgoing_msg">
               <div styleName="sent_msg">
-                <p>Apollo University, Delhi, India Test</p>
+                <p>Oh man. You got this. I'll see you there buddy.</p>
                 <span styleName="time_date"> 11:01 AM    |    Today</span> </div>
             </div>
             <div styleName="incoming_msg">
               <div styleName="incoming_msg_img"> <img styleName="pic" src={require('../../../assets/pp2.jpg')} alt="sunil"/> </div>
               <div styleName="received_msg">
                 <div styleName="received_withd_msg">
-                  <p>We work directly with our designers and suppliers,
-                    and sell direct to you, which means quality, exclusive
-                    products, at a price anyone can afford.</p>
+                  <p>Haha, thanks man. See you. </p>
                   <span styleName="time_date"> 11:01 AM    |    Today</span></div>
               </div>
             </div>
@@ -54,7 +50,7 @@ class Messenger2 extends Component {
           <div styleName="type_msg">
             <div styleName="input_msg_write">
               <input type="text" styleName="write_msg" placeholder="Type a message" />
-              <button styleName="msg_send_btn" type="button">Go</button>
+              <button styleName="msg_send_btn" type="button"> </button>
             </div>
           </div>
         </div>
