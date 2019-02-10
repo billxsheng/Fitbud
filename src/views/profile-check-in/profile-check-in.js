@@ -16,6 +16,8 @@ class ProfileCheckIn extends Component {
          
         };
       }
+
+      
     
 
     getCurrentLocation() {
@@ -33,7 +35,7 @@ class ProfileCheckIn extends Component {
 
     componentDidMount() {
         window.scrollTo(0,0);
-        
+      
     }
 
 
@@ -53,21 +55,46 @@ class ProfileCheckIn extends Component {
     }
 
     compareLocation(){
+        var pos; 
         this.getGymLocation();
-        var pos = this.getCurrentLocation();
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+              };
+              console.log(pos)
+            })
+          }
+
+  
+            fetch("https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=GoodLife%20Fitness%20Ottawa%20Queen%20Street&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key=AIzaSyDTSfOsB_Kse4D3cIuoBrUzfSElywL0fjs")
+            .then(res => res.json())
+            .then(
+              (res) => {
+             
+               setTimeout(
+                function() {
+                    var cCor = this.state.gymCor.candidates[0].geometry.location
+                    if(pos != this.state.gymCor){
+                        alert(`The gym on your profile (Goodlife Fitness Ottawa is Lat: ${cCor.lat} and Lng: ${cCor.lng}, but your current location is Lat: ${pos.lat} and Lng: ${pos.lng}`)
+                    }
+                  
+               
+                }
+                .bind(this),
+                5000
+            );
+              },
+              (error) => {
+                alert("please refresh the page")
+    
+              }
+            )
+        
         
     
-        setTimeout(
-            function() {
-                var cCor = this.state.gymCor.candidates[0].geometry.location
-                var currentCorr = this.getCurrentLocation();
-           if(this.state.currentCor != this.state.gymCor){
-               alert(`The gym on your profile (Goodlife Fitness Ottawa is Lat: ${cCor.lat} and Lng: ${cCor.lng}, but your current location is Lat: ${currentCorr.lat} and Lng: ${currentCorr.lng}`)
-           }
-            }
-            .bind(this),
-            6000
-        );
+        
 
         
     }
@@ -87,7 +114,7 @@ class ProfileCheckIn extends Component {
             <p className="display-5" >{this.state.trackName}</p>
             </div>
             <div className = "col-11 center text-center" styleName="main-area">
-            <a className="btn btn-primary btn-lg" onClick={() => this.compareLocation()}>Settings</a>
+            <a className="btn btn-primary btn-lg" onClick={() => this.compareLocation()}>Check In</a>
 
 
             </div>
