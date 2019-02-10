@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './profile.css';
 import CSSModules from 'react-css-modules';
+import Navbar from '../../components/navbar/navbar';
 
 class Profile extends Component {
 
@@ -12,6 +13,7 @@ class Profile extends Component {
         return(
             <div className="jumbotron">
                 <h1>Profile</h1>
+                <Navbar/>
             </div>
         )
     }
