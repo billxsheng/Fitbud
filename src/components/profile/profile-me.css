@@ -1,0 +1,97 @@
+.grey {
+    background-color: #ecf0f1;
+    height: 100vh;
+}
+
+.red {
+    background-color: #e74c3c;
+    height: 100vh;
+}
+
+.profile {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.settingsIcon {
+    font-size: 150%;
+}
+
+.roundAlan {
+    width: 60%;
+    height: auto;
+    border-radius: 200px;
+    border: 3px solid #e74c3c;
+}
+
+.noBorder {
+    border: none;
+}
+
+.tile {
+    margin: 60px 0 0 50px;
+    position: relative;
+}
+
+.bgCard {
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.white {
+    color: white !important;
+}
+
+.orange {
+    color: #e74c3c;
+}
+
+.settings-orange {
+    background-color: #FF7429 !important;
+    border: none;
+}
+
+.settings-orange:hover {
+    background-color: white !important;
+    border: 1px solid #FF7429;
+    color: #FF7429;
+}
+
+.bRadSettings {
+    border-radius: 20px;
+}
+
+.grow {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+  }
+  
+  .grow:hover,
+  .grow:focus {
+    transform: scale(1.05);
+  }
+  
+  .grow:active {
+    transform: scale(.90);
+  }
+  
+  .grow-large {
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform .25s ease-in-out;
+  }
+  
+  .grow-large:hover,
+  .grow-large:focus {
+    transform: scale(1.2);
+    cursor:pointer;
+  }
+  
+  .grow-large:active {
+    transform: scale(.95);
+    cursor:pointer;
+  }

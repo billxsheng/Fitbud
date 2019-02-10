@@ -3,6 +3,7 @@ import styles from './profile.css';
 import CSSModules from 'react-css-modules';
 import Navbar from '../../components/navbar/navbar';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import ProfileMe from '../../components/profile/profile-me';
 
 
 class Profile extends Component {
@@ -22,7 +23,7 @@ class Profile extends Component {
             <div>
     
                         <Navbar/>
-
+                        <ProfileMe/>
             </div>
         )
     }

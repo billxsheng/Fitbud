@@ -28,6 +28,7 @@ class Login extends Component {
             console.log('Error')
         })
     }
+    
     render() {
         return (
             <div className="jumbotron">
