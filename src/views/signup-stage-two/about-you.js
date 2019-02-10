@@ -58,7 +58,7 @@ class AboutYou extends Component {
                         <input name="password" styleName="bRadForm3" type="password" ></input>
                     </div>
                     <div className="form-group">
-                        <Link to="/login" className="btn btn-submit" styleName="brdRadBtn3" type="submit" value="Submit">Submit</Link>
+                        <Link to="/login" className="btn btn-submit" styleName="brdRadBtn3" value="Submit">Submit</Link>
                     </div>
                 </form>
             </div>

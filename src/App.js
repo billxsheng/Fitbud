@@ -166,7 +166,7 @@ connect(){
         <Route exact path="/profile/feed" component={profileFeed}/>
         <Route exact path="/profile/check-in" component={profileCheckIn}/>
         <Route exact path="/find-friends" component={findFriends}/>
-        <Route exact path="/profile/lebron-james" component={profileMessenger}/>
+        <Route exact path="/profile/chat/lebron-james" component={profileMessenger}/>
       </Switch>
     )
 

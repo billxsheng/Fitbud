@@ -61,7 +61,7 @@ class Signup extends Component {
                     </div>
                     <br/>
                     <div className="form-group">
-                        <Link to="/tell-us-about-yourself" className="btn btn-submit" styleName="brdRadBtn2" type="submit" value="Submit">Submit</Link>
+                        <Link to="/tell-us-about-yourself" className="btn btn-submit" styleName="brdRadBtn2" value="Submit">Submit</Link>
                     </div>
                 </form>
             </div>

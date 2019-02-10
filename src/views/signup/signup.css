@@ -8,6 +8,7 @@
 .brdRadBtn2:hover {
     background-color: white;
     color: #FF7429;
+    border: 1px solid #FF7429;
 
 }   
 
