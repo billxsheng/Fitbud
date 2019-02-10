@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './about-you.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 
 class AboutYou extends Component {
@@ -10,52 +10,55 @@ class AboutYou extends Component {
     }
 
     componentDidMount() {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         this.submitForm = this.submitForm.bind(this)
     }
 
     submitForm = (event) => {
         event.preventDefault();
-        this.setState({submitted: true})
+        this.setState({ submitted: true })
     }
 
     render() {
         return (
-            <div className="jumbotron">
-                <h1>We want to learn more about you!</h1>
+            <div className="text-center mx-auto card mt-5" styleName="cardBorder" style={{ "width": "35rem" }}>
+                <br />
+                <br />
+                <img className="mx-auto" styleName="image" src={require('../../assets/logo.png')}></img>
+                <h5 className="px-5" styleName="orange3">We want to learn more about you!</h5>
                 <form onSubmit={this.submitForm}>
-                    <div className="form-group">
-                        <label>Fitness Style</label>
+                    <div className="form-group mt-3 mb-0">
+                        <h5><label>Fitness Style</label></h5>
                     </div>
                     <div className="form-group">
-                        <input name="first-name" type="first-name" ></input>
+                        <input name="first-name" styleName="bRadForm3" type="first-name" ></input>
+                    </div>
+                    <div className="form-group mb-0">
+                        <h5><label>About Me</label></h5>
                     </div>
                     <div className="form-group">
-                        <label>About Me</label>
+                        <textarea name="last-name" styleName="bRadForm3" type="last-name" ></textarea>
+                    </div>
+                    <div className="form-group mb-0">
+                        <h5><label>Current Bests</label></h5>
                     </div>
                     <div className="form-group">
-                        <textarea name="last-name" type="last-name" ></textarea>
+                        <input name="age" styleName="bRadForm3" type="age" ></input>
+                    </div>
+                    <div className="form-group mb-0">
+                        <h5><label>Current Goals</label></h5>
                     </div>
                     <div className="form-group">
-                        <label>Current Bests</label>
+                        <input name="phone" styleName="bRadForm3" type="phone" ></input>
+                    </div>
+                    <div className="form-group mb-0">
+                        <h5><label>What is your current gym?</label></h5>
                     </div>
                     <div className="form-group">
-                        <input name="age" type="age" ></input>
+                        <input name="password" styleName="bRadForm3" type="password" ></input>
                     </div>
                     <div className="form-group">
-                        <label>Current Goals</label>
-                    </div>
-                    <div className="form-group">
-                        <input name="phone" type="phone" ></input>
-                    </div>
-                    <div className="form-group">
-                        <label>What is your current gym?</label>
-                    </div>
-                    <div className="form-group">
-                        <input name="password" type="password" ></input>
-                    </div>
-                    <div className="form-group">
-                        <Link to="/login" className="btn btn-submit" type="submit" value="Submit">Submit</Link>
+                        <Link to="/login" className="btn btn-submit" styleName="brdRadBtn3" type="submit" value="Submit">Submit</Link>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,32 @@
+.cardBorder {
+    border: none;
+    box-shadow: 0 0 20px #ccc;
+    border-radius: 20px;
+}
+
+.image {
+    width: 60%;
+    height:auto;
+}
+
+.orange3 {
+    color: #FF7429;
+}
+
+.bRadForm3 {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.brdRadBtn3 {
+    width: 90px;
+    border-radius: 20px;
+    background-color: #FF7429;
+    color: white;
+    
+}   
+
+.brdRadBtn3:hover {
+    background-color: white;
+    color: #FF7429;
+}   
