@@ -50,7 +50,7 @@ class ProfileMe extends Component {
                                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                             </a>
                         </div>
-                        <a href="#" className="btn btn-primary" styleName="settings-orange bRadSettings grow">Logout</a>
+                        <Link to="/" className="btn btn-primary" styleName="settings-orange bRadSettings grow">Logout</Link>
                     </div>
                 </div>
             </div>
