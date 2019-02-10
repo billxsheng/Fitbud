@@ -9,6 +9,7 @@ import findFriends from './components/find-friends/find-friends';
 import aboutYou from './views/signup-stage-two/about-you';
 import profileFeed from './views/profile-feed/profile-feed';
 import profileCheckIn from './views/profile-check-in/profile-check-in';
+import profileMessenger from './views/profile-messenger/profile.messenger';
 
 class App extends Component {
 
@@ -36,6 +37,7 @@ class App extends Component {
         <Route exact path="/profile/feed" component={profileFeed}/>
         <Route exact path="/profile/check-in" component={profileCheckIn}/>
         <Route exact path="/find-friends" component={findFriends}/>
+        <Route exact path="/profile/lebron-james" component={profileMessenger}/>
       </Switch>
     )
 
