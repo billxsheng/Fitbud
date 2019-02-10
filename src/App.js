@@ -10,6 +10,7 @@ import aboutYou from './views/signup-stage-two/about-you';
 import profileFeed from './views/profile-feed/profile-feed';
 import profileCheckIn from './views/profile-check-in/profile-check-in';
 import profileMessenger from './views/profile-messenger/profile.messenger';
+
 import axios from 'axios';
 
 class App extends Component {
@@ -34,7 +35,7 @@ class App extends Component {
     
     
     console.log("acitavted")
-  const token = 'BQAXc4M6j8boBdW6MwI70Pg6csn_Y-sWrEVeX970fbLh2kQ0h99o3FhVqSCgSLHCaxeW00H_Am_x5ioCWOLftQXGJRmPdN8EP_eaAun4QdC5s3wLPUHPvqJdLTqMtkdzmrlXQ-gh58toOnhR8zirV8p6O_r0tJlBvRC0IAI03g';
+  const token = 'BQB8GJENM_n8EGeL_hoaovyz1XcEcVPbnn4INwf4mLemQbU-OrUhUPnM50LUAEUTAZv3Ud-Aa2j9mmR-6wTZTgUUxYkOLKIjvgFMjAmqO3ktXXIOO4bWJcAkeGxAlvLi8bfIzG8x_6ASsj_u4stiboUbyLKM_I9FnQUcgZYr';
     if (window.Spotify !== null) {
       this.player = new window.Spotify.Player({
         name: "Testing",
@@ -65,8 +66,36 @@ class App extends Component {
     this.player.on('ready', data => {
       let { device_id } = data;
       console.log("Let the music play on!");
-      // this.setState({ deviceId: device_id });
+      console.log(device_id);
     });
+
+    this.player.on('player_state_changed', state => this.onStateChanged(state));
+  }
+
+
+  onStateChanged(state) {
+    // if we're no longer listening to music, we'll get a null state.
+    if (state !== null) {
+      const {
+        current_track: currentTrack,
+        position,
+        duration,
+      } = state.track_window;
+      const trackName = currentTrack.name;
+      const albumName = currentTrack.album.name;
+      const artistName = currentTrack.artists
+        .map(artist => artist.name)
+        .join(", ");
+      const playing = !state.paused;
+      this.setState({
+        position,
+        duration,
+        trackName,
+        albumName,
+        artistName,
+        playing
+      });
+    }
   }
 
   
@@ -95,32 +124,38 @@ class App extends Component {
     )
   };
 
-  getCurrentLocation() {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(function(position) {
-        var pos = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-        console.log(pos)
-      })
+  
+
+  onPrevClick() {
+    this.player.previousTrack();
+    
+  }
+  
+  onPlayClick() {
+    this.player.togglePlay();
+  }
+  
+  onNextClick() {
+    this.player.nextTrack();
+
+  }
+
+connect(){
+  console.log("connected")
+  setTimeout(
+    function() {
+      this.checkForPlayer();
     }
+    .bind(this),
+    4000
+);
   }
 
 
+
   render() {
-
-    this.getCurrentLocation();
-
-    setTimeout(
-      function() {
-        this.checkForPlayer();
-      }
-      .bind(this),
-      5000
-  );
     
-  
+    
 
     let routes = (
       <Switch>
@@ -137,9 +172,13 @@ class App extends Component {
 
     return (
       <div>
+
+
+
           <BrowserRouter>
             <div className="App">
                 {routes}
+                
             </div>
           </BrowserRouter>
       </div>
