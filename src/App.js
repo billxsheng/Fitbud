@@ -9,9 +9,10 @@ import aboutYou from './views/signup-stage-two/about-you';
 import profileFeed from './views/profile-feed/profile-feed';
 import profileCheckIn from './views/profile-check-in/profile-check-in';
 import axios from 'axios';
-import messenger3 from './components/messenger/sal/messenger-3';
-import messenger2 from './components/messenger/justin/messenger-2';
-import messenger1 from './components/messenger/lebron/messenger-1';
+import profileMessengerLb from './views/profile-messenger/profile-messenger-lb/profile.messenger-lb';
+import profileMessengerJf from './views/profile-messenger/profile-messenger-jf/profile.messenger-jf';
+import profileMessengerSm from './views/profile-messenger/profile-messenger-sm/profile.messenger-sm';
+
 
 class App extends Component {
 
@@ -166,9 +167,9 @@ connect(){
         <Route exact path="/profile/feed" component={profileFeed}/>
         <Route exact path="/profile/check-in" component={profileCheckIn}/>
         <Route exact path="/find-friends" component={findFriends}/>
-        <Route exact path="/profile/chat/lebron-james" component={messenger1}/>
-        <Route exact path="/profile/chat/justin-fields" component={messenger2}/>
-        <Route exact path="/profile/chat/sal-murphy" component={messenger3}/>
+        <Route exact path="/profile/chat/lebron-james" component={profileMessengerLb}/>
+        <Route exact path="/profile/chat/justin-fields" component={profileMessengerJf}/>
+        <Route exact path="/profile/chat/sal-murphy" component={profileMessengerSm}/>
       </Switch>
     )
 
