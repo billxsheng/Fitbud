@@ -14,7 +14,7 @@ class Navbar extends Component {
                     <hr></hr>
                     <Link to="/profile/msg"><div styleName="feed-btn-msg msg1"></div></Link>                 
                     <Link to="/profile/msg"><div styleName="feed-btn-msg msg2"></div></Link>                 
-                    <Link to="/profile/msg"><div styleName="feed-btn-msg msg3"></div></Link>    
+                    <Link to="/profile/msg"><div styleName="feed-btn-msg msg3"></div></Link> 
                     <hr></hr>             
                     <div styleName="feed-btn-cont">
                         <Link to="/find-friends"><i styleName="feed-btn" className="fas fa-user-friends"></i></Link>                 

@@ -3,9 +3,12 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Signup from './views/signup/signup';
 import Login from './views/login/login';
-import Profile from './views/profile/profile';
+import Profile from './views/profile/profile-feed';
 import Landing from './views/landing/landing';
 import findFriends from './components/find-friends/find-friends';
+import aboutYou from './views/signup-stage-two/about-you';
+import profileFeed from './views/profile-feed/profile-feed';
+import profileCheckIn from './views/profile-check-in/profile-check-in';
 
 class App extends Component {
 
@@ -28,8 +31,10 @@ class App extends Component {
       <Switch>
         <Route exact path="/" component={Landing} ></Route>
         <Route exact path="/signup" component={Signup}/>
+        <Route exact path="/tell-us-about-yourself" component={aboutYou}/>
         <Route exact path="/login" component={Login}/>
-        <Route exact path="/profile/feed" component={Profile}/>
+        <Route exact path="/profile/feed" component={profileFeed}/>
+        <Route exact path="/profile/check-in" component={profileCheckIn}/>
         <Route exact path="/find-friends" component={findFriends}/>
       </Switch>
     )

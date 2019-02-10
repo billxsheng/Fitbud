@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import styles from './signup.css';
+import styles from './about-you.css';
 import {Link} from 'react-router-dom'
 import CSSModules from 'react-css-modules';
 
-class Signup extends Component {
+class AboutYou extends Component {
 
     state = {
         submitted: false
@@ -22,40 +22,40 @@ class Signup extends Component {
     render() {
         return (
             <div className="jumbotron">
-                <h1>We are so grateful to be joining your fitness journey!</h1>
+                <h1>We want to learn more about you!</h1>
                 <form onSubmit={this.submitForm}>
                     <div className="form-group">
-                        <label>First Name</label>
+                        <label>Fitness Style</label>
                     </div>
                     <div className="form-group">
                         <input name="first-name" type="first-name" ></input>
                     </div>
                     <div className="form-group">
-                        <label>Last Name</label>
+                        <label>About Me</label>
                     </div>
                     <div className="form-group">
-                        <input name="last-name" type="last-name" ></input>
+                        <textarea name="last-name" type="last-name" ></textarea>
                     </div>
                     <div className="form-group">
-                        <label>Age</label>
+                        <label>Current Bests</label>
                     </div>
                     <div className="form-group">
                         <input name="age" type="age" ></input>
                     </div>
                     <div className="form-group">
-                        <label>Phone Number</label>
+                        <label>Current Goals</label>
                     </div>
                     <div className="form-group">
                         <input name="phone" type="phone" ></input>
                     </div>
                     <div className="form-group">
-                        <label>Password</label>
+                        <label>What is your current gym?</label>
                     </div>
                     <div className="form-group">
                         <input name="password" type="password" ></input>
                     </div>
                     <div className="form-group">
-                        <Link to="/tell-us-about-yourself" className="btn btn-submit" type="submit" value="Submit">Submit</Link>
+                        <Link to="/login" className="btn btn-submit" type="submit" value="Submit">Submit</Link>
                     </div>
                 </form>
             </div>
@@ -64,4 +64,4 @@ class Signup extends Component {
 };
 
 
-export default CSSModules(Signup, styles);
+export default CSSModules(AboutYou, styles);

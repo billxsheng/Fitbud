@@ -25,7 +25,8 @@ class ProfileMe extends Component {
                                     <h6>Style</h6>
                                     <p>Powerlifting</p>
                                     <h6>About Me</h6>
-                                    <p>When I lost my gym buddies, I lost my motivation. Looking for a FitBuddy to bring me back! 😤💪 #MotivationSeeker #LeagueOverLegs</p>
+                                    <p>When I lost my gym buddies, I lost my motivation. Looking for a FitBuddy to bring me back! 😤💪</p>
+                                    <p>Current Gym: GoodLife Fitness Ottawa Queen Street</p>
                                     <br></br>
                                 </div>
                                 <div className="carousel-item">
