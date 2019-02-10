@@ -3,7 +3,7 @@
     border-radius: 20px;
     background-color: #FF7429;
     color: white;
-    border: none;
+    border: 1px solid white
 }
 
 .brdRadBtn:hover {
@@ -27,12 +27,6 @@
     box-shadow: 0 0 20px #ccc;
     border-radius: 20px;
 }
-
-.properFont {
-    font-family: "Roboto", sans-serif;
-    color: black;
-}
-
 
 .grow {
     -moz-osx-font-smoothing: grayscale;
