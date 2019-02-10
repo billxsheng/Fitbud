@@ -19,7 +19,7 @@ class Login extends Component {
         }).then((res) => {
             if(res.data.success) {
                 console.log('redirect')
-                this.props.history.push("/profile");
+                this.props.history.push("/profile/feed");
             } else {
                 console.log('dont redirect')
                 this.props.history.push("/login");

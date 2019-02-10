@@ -1,8 +1,43 @@
 .navbar {
     height: 100vh;
-    width: 100px;
-    background-color: red;
+    background-color: white;
     position: absolute;
     top: 0;
     right: 0;
 }
+
+.feed-btn {
+    font-size: 30px;
+    color: #FF7429;
+}
+
+.feed-btn-cont {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.feed-btn-msg {
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin: 20px auto;
+    cursor: pointer;
+    border: 2px solid #FF7429;
+}
+
+.msg1 {
+    background-image: url('../../assets/pp1.jpg');
+    background-size: cover;
+}
+
+.msg2 {
+    background-image: url('../../assets/pp2.jpg');
+    background-size: cover;
+}
+
+.msg3 {
+    background-image: url('../../assets/pp3.jpg');
+    background-size: cover;
+}
+

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styles from './profile.css';
 import CSSModules from 'react-css-modules';
 import Navbar from '../../components/navbar/navbar';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 
 class Profile extends Component {
 
@@ -10,10 +12,20 @@ class Profile extends Component {
     }
 
     render() {
+        let routes = (
+            <Switch>
+                {/* <Route path="/profile/msg" component={}/> */}
+                {/* <Route path="/profile/find-friends" component={}/>  */}
+            </Switch>
+        )
         return(
-            <div className="jumbotron">
-                <h1>Profile</h1>
-                <Navbar/>
+            <div>
+                <BrowserRouter>
+                    <div>
+                        {routes}
+                        <Navbar/>
+                    </div>
+                </BrowserRouter>
             </div>
         )
     }
