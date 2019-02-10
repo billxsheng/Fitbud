@@ -21,6 +21,11 @@
     color: #FF7429;
 }
 
+.starSize {
+    height:30px;
+    width: auto;
+}
+
 .btn-back {
     background-color: #FF7429;
     padding: 10px 20px;
@@ -37,9 +42,6 @@
     color: #FF7429;
 }
 
-.btn-back-div {
-
-}
 
 .moveBareDown {
     margin-top: 260px;
