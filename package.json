@@ -42,7 +42,7 @@
     "raf": "3.4.0",
     "react": "^16.4.2",
     "react-css-modules": "^4.7.7",
-    "react-dev-utils": "^5.0.1",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.4.2",
     "react-owl-carousel2": "^0.3.0",
     "react-router": "^4.3.1",
